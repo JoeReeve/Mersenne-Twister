@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mersenne Visualizer</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mersenne Twister Visualizer</h1>
+    </header>   
+
+    <nav>
+        <ul class = "nav-list">
+            <li><a class = "nav-links" href="./mersenne.html">Home</a></li>
+            <li><a class = "nav-links" href="./Random Colors.html">Random Colors</a></li>
+            <li><a class = "nav-links" href="./blackAndWhite.html"><u>Heat Map</u></a></li>
+            <li><a class = "nav-links" href="./python.html">Python Code</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <canvas id = "canvas2"></canvas>
+    <div class="tooltip"><u class = "more-info">More info</u>
+        <span class="tooltiptext">
+            Rather than looping through every single pixel, this algorithm 
+            counts the number of pixels in the canvas, and then generates 
+            'random' x and y values to select 'random' pixels. Instead of each 
+            pixel getting selected once, some will be selected multiple times 
+            while others aren't selected at all. Every time a pixel is randomly selected 
+            it increases the redness of that pixel. This in essence will give us a 'heat map' to show
+            us how spread out the Mersenne Twister numbers are. A bad PRNG will have clumps or areas
+            that are 'hotter' than others and a good one will be quite uniform.
+        </span>
+      </div>
+
+    <script type = "module" src = "canvas2.js"></script>
+    
+</body>
+</html>

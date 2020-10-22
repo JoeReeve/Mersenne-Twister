@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #f8f8f8 0%, #a6c1ee 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+#canvas1 {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6vh;
+    display: block;
+}
+
+#canvas2 {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav {
+    text-decoration: underline;
+  }
+
+.more-info{
+    border-bottom: 1px dotted black;
+}
+
+h2 {
+    min-height: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20vh;
+}
+
+h3 {
+    min-height: 20px;
+    font-size: 25px;
+    color:#3b79e4;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 130vh;
+    margin-top: 10vh;
+    
+}
+
+h4 {
+    min-height: 20px;
+    font-size: 25px;
+    color:#3b79e4;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    
+}
+
+p {
+    font-size: 15px;
+    color: black;
+}
+
+.home-par1 {
+    font-size: 15px;
+    color: black;
+    margin-left: 15vh;
+}
+
+.home-par2 {
+    font-size: 15px;
+    color: black;
+    margin-left: 70vh;
+    margin-right: 15vh;
+}
+
+.home-par3 {
+    font-size: 15px;
+    color: black;
+    margin-left: 15vh;
+    margin-bottom: 10vh;
+}
+
+.tooltip {
+    color: black;
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    justify-content: center;
+    display: flex;
+
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -35vh;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .python-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
