@@ -1,3 +1,2 @@
 This project was a simple way to explore HTML/JavaScript basics and to research more about a topic I'm interested in, pseudo-random number generators.
 Had lots of fun deciphering the original paper the Mersenne Twister first appeared in. That paper can be found here: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/ARTICLES/mt.pdf
-Also in this repository is a python implementation of the MT
