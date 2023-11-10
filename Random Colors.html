@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>Mersenne Visualizer</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+			integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+		<title>Mersenne Visualizer</title>
+	</head>
+	<body>
+		<header>
+			<h1>Mersenne Twister Visualizer</h1>
+		</header>
 
-    <header>
-        <h1>Mersenne Twister Visualizer</h1>
-    </header>   
+		<nav>
+			<ul class="nav-list">
+				<li>
+					<a
+						class="nav-links"
+						href="./index.html"
+						>Home</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav-links"
+						href="./Random Colors.html"
+						><u>Random Colors</u></a
+					>
+				</li>
+				<li>
+					<a
+						class="nav-links"
+						href="./blackAndWhite.html"
+						>Heat Map</a
+					>
+				</li>
+				<li>
+					<a
+						class="nav-links"
+						href="./javascript.html"
+						>JavaScript Code</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div class="center">
+			<p>
+				Please wait a couple seconds for the algorithm to do its stuff:)
+			</p>
+		</div>
 
-    <nav>
-        <ul class = "nav-list">
-            <li><a class = "nav-links" href="./mersenne.html">Home</a></li>
-            <li><a class = "nav-links" href="./Random Colors.html"><u>Random Colors</u></a></li>
-            <li><a class = "nav-links" href="./blackAndWhite.html">Heat Map</a></li>
-            <li><a class = "nav-links" href="./python.html">Python Code</a></li>
-        </ul>
-    </nav>
+		<canvas id="canvas1"></canvas>
+		<div class="tooltip">
+			<u class="more-info">More info</u>
+			<span class="tooltiptext"
+				>Every pixel on this canvas is generated using the Mersenne
+				Twister. The algorithm loops through every pixel on the canvas
+				and generates a random RBG value for each one, resulting in a
+				totally random (pseudo-random!) color. The seed used is the
+				current time in milliseconds, so refresh the page to generate a
+				brand new canvas. In theory, because of how many different
+				arrangements of pixels this can generate, the next time you
+				refresh you could see the latest selfie you took looking back at
+				you, or maybe a picture of the surface of Mars! Really it could
+				show you any picture ever taken, or any thought ever imagined,
+				or the answers to your next test!</span
+			>
+		</div>
 
-   
-
-    <canvas id="canvas1"></canvas>
-    <div class="tooltip"><u class = "more-info">More info</u>
-        <span class="tooltiptext">Every pixel on this canvas is generated using the Mersenne Twister.
-            The algorithm loops through every pixel on the canvas and generates a random RBG value 
-            for each one, resulting in a totally random (pseudo-random!) color. The seed used is the current time in milliseconds, 
-            so refresh the page to generate a brand new canvas. In theory, because of how many different arrangements of pixels
-            this can generate, the next time you refresh you could see the latest selfie you took looking back at you, or maybe 
-            a picture of the surface of Mars! Really it could show you any picture ever taken, or any thought ever imagined, or 
-            the answers to your next test!</span>
-      </div>
-
-    <script type = "module" src = "canvas1.js"></script>
-    
-</body>
+		<script
+			type="module"
+			src="canvas1.js"
+		></script>
+	</body>
 </html>

@@ -41,44 +41,44 @@
 					<a
 						class="nav-links"
 						href="./blackAndWhite.html"
-						><u>Heat Map</u></a
+						>Heat Map</a
 					>
 				</li>
 				<li>
 					<a
 						class="nav-links"
 						href="./javascript.html"
-						>JavaScript Code</a
+						><u>JavaScript Code</u></a
 					>
 				</li>
 			</ul>
 		</nav>
 		<div class="center">
 			<p>
-				Please wait a couple seconds for the algorithm to do its stuff:)
+				Here is the js implementation of the Mersenne Twister. The code
+				is based on the pseduo-code of the algorithm on wikipedia
+			</p>
+			<p>
+				Check out the paper that originally detailed the Mersenne
+				Twister:
+				<a
+					href="http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/ARTICLES/mt.pdf"
+					>Link</a
+				>
 			</p>
 		</div>
 
-		<canvas id="canvas2"></canvas>
-		<div class="tooltip">
-			<u class="more-info">More info</u>
-			<span class="tooltiptext">
-				Rather than looping through every single pixel, this algorithm
-				counts the number of pixels in the canvas, and then generates
-				'random' x and y values to select 'random' pixels. Instead of
-				each pixel getting selected once, some will be selected multiple
-				times while others aren't selected at all. Every time a pixel is
-				randomly selected it increases the redness of that pixel. This
-				in essence will give us a 'heat map' to show us how spread out
-				the Mersenne Twister numbers are. A bad PRNG will have clumps or
-				areas that are 'hotter' than others and a good one will be quite
-				uniform.
-			</span>
-		</div>
+		<img
+			src="MTjs.png"
+			width="342"
+			height="635"
+			alt="Mersenne Twister Python Code"
+			class="python-img"
+		/>
 
 		<script
 			type="module"
-			src="canvas2.js"
+			src="canvas.js"
 		></script>
 	</body>
 </html>
